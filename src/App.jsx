@@ -123,12 +123,12 @@ function Hero() {
       <img
         src="/img/duo-1-sm.webp"
         srcSet="/img/duo-1-sm.webp 600w, /img/duo-1.webp 1000w"
-        sizes="100vw"
+        sizes="(min-width:768px) 60vw, 100vw"
         alt="Dra. Gizelly Viana e Dra. Érika Rayrine"
-        className="kenburns absolute inset-0 -z-10 h-full w-full object-cover object-[50%_20%]"
+        className="hero-fade kenburns absolute right-0 top-0 -z-10 h-[68%] w-full object-cover object-[50%_15%] md:h-full md:w-[60%] md:object-[50%_25%]"
         fetchPriority="high"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-carvao via-carvao/55 to-carvao/10" />
+      <div className="absolute -z-10 h-72 w-72 rounded-full bg-bronze/20 blur-3xl md:left-[8%] md:top-[20%]" aria-hidden />
       <div className="mx-auto w-full max-w-6xl px-5 pb-14 pt-32 text-creme md:pb-24">
         <p style={{ '--d': '.2s' }} className="rise mb-3 text-xs tracking-[0.3em] uppercase text-areia">Protocolo de clareamento dental</p>
         <h1 style={{ '--d': '.4s' }} className="rise font-serif text-6xl font-semibold leading-[0.95] md:text-8xl">
@@ -252,7 +252,7 @@ function Diferencial() {
             sizes="(min-width:768px) 50vw, 100vw"
             alt="Dra. Gizelly Viana e Dra. Érika Rayrine na ERCLINIC"
             loading="lazy"
-            className="mx-auto aspect-[3/4] w-full max-w-md rounded-2xl object-cover shadow-xl"
+            className="mx-auto aspect-[4/5] w-full max-w-md rounded-2xl object-cover object-top shadow-xl md:mx-0 md:max-w-none"
           />
         </Reveal>
         <Reveal className="order-1 md:order-2">

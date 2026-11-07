@@ -29,6 +29,17 @@ body {
 .img-reveal img { transform: scale(1.18); transition: transform 1.8s cubic-bezier(.2,.7,.2,1); }
 .img-reveal.in img { transform: scale(1); }
 
+.hero-fade {
+  -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+}
+@media (min-width: 768px) {
+  .hero-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 38%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 38%);
+  }
+}
+
 @keyframes kenburns { from { transform: scale(1.02); } to { transform: scale(1.12); } }
 .kenburns { animation: kenburns 18s ease-in-out infinite alternate; }
 
